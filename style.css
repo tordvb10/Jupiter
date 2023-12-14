@@ -5,6 +5,145 @@ main {
   margin: 0;
   font-family: "Inknut Antiqua", "Inter", "Times New Roman", Times, serif;
 }
+/*Display flex and orientate display positions start*/
+/*column*/
+.DisplayFlexColumnLeftBottom,
+.DisplayFlexColumnMiddleBottom,
+.DisplayFlexColumnRightBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.DisplayFlexColumnLeftMiddle,
+.DisplayFlexColumnMiddleMiddle,
+.DisplayFlexColumnRightMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.DisplayFlexColumnLeftTop,
+.DisplayFlexColumnMiddleTop,
+.DisplayFlexColumnRightTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/*column reverse*/
+.DisplayFlexColumnReverseLeftBottom,
+.DisplayFlexColumnReverseMiddleBottom,
+.DisplayFlexColumnReverseRightBottom {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+.DisplayFlexColumnReverseLeftMiddle,
+.DisplayFlexColumnReverseMiddleMiddle,
+.DisplayFlexColumnReverseRightMiddle {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.DisplayFlexColumnReverseLeftTop,
+.DisplayFlexColumnReverseMiddleTop,
+.DisplayFlexColumnReverseRightTop {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+/*row*/
+
+.DisplayFlexRowRightTop,
+.DisplayFlexRowRightMiddle,
+.DisplayFlexRowRightBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.DisplayFlexRowMiddleTop,
+.DisplayFlexRowMiddleMiddle,
+.DisplayFlexRowMiddleBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.DisplayFlexRowLeftTop,
+.DisplayFlexRowLeftMiddle,
+.DisplayFlexRowLeftBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/*row reverse*/
+.DisplayFlexRowReverseRightTop,
+.DisplayFlexRowReverseRightMiddle,
+.DisplayFlexRowReverseRightBottom {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.DisplayFlexRowReverseMiddleTop,
+.DisplayFlexRowReverseMiddleMiddle,
+.DisplayFlexRowReverseMiddleBottom {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.DisplayFlexRowReverseLeftTop,
+.DisplayFlexRowReverseLeftMiddle,
+.DisplayFlexRowReverseLeftBottom {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+/*align column row*/
+.DisplayFlexColumnReverseLeftBottom *,
+.DisplayFlexColumnReverseLeftMiddle *,
+.DisplayFlexColumnReverseLeftTop *,
+.DisplayFlexColumnLeftBottom *,
+.DisplayFlexColumnLeftMiddle *,
+.DisplayFlexColumnLeftTop *,
+.DisplayFlexRowReverseLeftTop *,
+.DisplayFlexRowReverseMiddleTop *,
+.DisplayFlexRowReverseRightTop *,
+.DisplayFlexRowLeftTop *,
+.DisplayFlexRowMiddleTop *,
+.DisplayFlexRowRightTop * {
+  align-self: flex-start;
+}
+.DisplayFlexColumnReverseMiddleBottom *,
+.DisplayFlexColumnReverseMiddleMiddle *,
+.DisplayFlexColumnReverseMiddleTop *,
+.DisplayFlexColumnMiddleBottom *,
+.DisplayFlexColumnMiddleMiddle *,
+.DisplayFlexColumnMiddleTop *,
+.DisplayFlexRowReverseLeftMiddle *,
+.DisplayFlexRowReverseMiddleMiddle *,
+.DisplayFlexRowReverseRightMiddle *,
+.DisplayFlexRowLeftMiddle *,
+.DisplayFlexRowMiddleMiddle *,
+.DisplayFlexRowRightMiddle * {
+  align-self: center;
+}
+.DisplayFlexColumnReverseRightBottom *,
+.DisplayFlexColumnReverseRightMiddle *,
+.DisplayFlexColumnReverseRightTop *,
+.DisplayFlexColumnRightBottom *,
+.DisplayFlexColumnRightMiddle *,
+.DisplayFlexColumnRightTop *,
+.DisplayFlexRowReverseLeftBottom *,
+.DisplayFlexRowReverseMiddleBottom *,
+.DisplayFlexRowReverseRightBottom *,
+.DisplayFlexRowLeftBottom *,
+.DisplayFlexRowMiddleBottom *,
+.DisplayFlexRowRightBottom * {
+  align-self: flex-end;
+}
+
+.flexwrap {
+  flex-wrap: wrap;
+}
+/*Display flex and orientate display positions end*/
 
 .pimg {
   position: relative;
@@ -24,11 +163,17 @@ main {
 }
 
 section {
-  text-align: center;
-  padding: 50px 80px;
+  height: 500px;
   background-color: aqua;
 }
 
+section * {
+  width: fit-content;
+  height: fit-content;
+}
+p {
+  width: 500px;
+}
 /*
 under til hjelp hvis det skal være tekst på parallax blidet.
 
