@@ -6,6 +6,7 @@ main {
   font-family: "Inknut Antiqua", "Inter", "Times New Roman", Times, serif;
 }
 /*Display flex and orientate display positions start*/
+/*justify-content displays at start, middle, end, space-around, space-between*/
 /*column*/
 .DisplayFlexColumnLeftBottom,
 .DisplayFlexColumnMiddleBottom,
