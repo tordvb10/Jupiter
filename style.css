@@ -13,8 +13,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /**/
+}
+.pimg1 {
   background-image: url("img/GreatRedSpot.webp");
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url("img/Jupiters4Moons.webp");
   min-height: 100%;
 }
 
