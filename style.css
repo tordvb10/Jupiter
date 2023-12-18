@@ -236,20 +236,35 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100%;
-}
-.pimg1 {
-  background-image: url("img/GreatRedSpot.webp");
-}
-.pimg2 {
-  background-image: url("img/Jupiters4Moons.webp");
 }
 .pimg3 {
-  background-image: url("img/ParallaxMoons.webp");
+  background-image: url("img/ParallaxEuropa2.webp");
+  min-height: 100%;
+  background-position: top;
 }
 .pimg4 {
   background-image: url("img/ParallaxJupiter1.webp");
   background-position: bottom;
+  min-height: 100%;
+}
+.pimg5 {
+  background-image: url("img/ParallaxMoons.webp");
+  min-height: 100%;
+}
+.pimg6 {
+  background-image: url("img/ParallaxJupiter2.webp");
+  min-height: 100%;
+  background-position: 50% 25%;
+}
+.pimg7 {
+  background-image: url("img/GreatRedSpot.webp");
+  min-height: 100%;
+  background-size: cover;
+  background-position: top;
+}
+.pimg8 {
+  background-image: url("img/ParallaxRings2.webp");
+  min-height: 100%;
 }
 
 section {
@@ -295,7 +310,8 @@ under til hjelp hvis det skal være tekst på parallax blidet.
 
 /*Spess styling*/
 /*Section header*/
-header {
+header,
+header button {
   padding: 0px 20px;
   font-size: 20px;
   height: 72px;
@@ -303,17 +319,23 @@ header {
   color: #ffffff;
 }
 
-header h6 {
+header h6,
+header button {
   font-weight: bold;
   margin-top: auto;
   margin-bottom: auto;
+}
+header button {
+  margin: none;
+  border: none;
+  font-family: "Inknut Antiqua", "Inter", "Times New Roman", Times, serif;
 }
 
 header #englishnorsk {
   font-size: 10px;
 }
 
-header #norsk {
+header .norsk {
   font-weight: normal;
 }
 /*main*/
