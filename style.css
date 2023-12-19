@@ -429,10 +429,10 @@ main #ImgEuropaIndre {
   height: 95%;
 }
 
-main #Ring > p,
 main #Moons > p {
   width: 350%;
 }
+main #Ring > p,
 main #EyeOfTheStorm > .firstparagraph {
   width: 80%;
 }
