@@ -11,6 +11,7 @@ addEventListener("click", function () {
     console.log("Konverterer nettsiden til Engelsk.");
     //Converter nettside start
     english.style.fontWeight = "400";
+
     norsk.style.fontWeight = "900";
     //Converter nettside slutt
     language = "english";
@@ -18,6 +19,7 @@ addEventListener("click", function () {
     console.log("Converting the webpage to Norwegian.");
     //Converting webpage start
     english.style.fontWeight = "900";
+
     norsk.style.fontWeight = "400";
     //Converting webpage end
     language = "norsk";
