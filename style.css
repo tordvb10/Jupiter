@@ -260,7 +260,7 @@ main {
   background-image: url("img/GreatRedSpot.webp");
   min-height: 100%;
   background-size: cover;
-  background-position: top;
+  background-position: right top;
 }
 .pimg8 {
   background-image: url("img/ParallaxRings2.webp");
@@ -340,10 +340,13 @@ header .norsk {
 }
 /*main*/
 main {
-  font-size: 10px;
+  font-size: 14px;
 }
 main h1 {
   font-size: 20px;
+  color: #6f584b;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #442e19;
 }
 /*Section Introduksjon*/
 main #introduksjon > * > * {
@@ -362,8 +365,12 @@ main #introduksjon {
   border-radius: 2px;
 }
 main #introduksjon h1 {
+  border: none;
+  color: #ffffff;
   font-size: 30px;
   font-weight: bold;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: none;
 }
 /*Section Jupiter*/
 main #Jupiter {
@@ -421,10 +428,13 @@ main #ImgEuropaIndre {
   width: 95%;
   height: 95%;
 }
-main #EyeOfTheStorm > p,
+
 main #Ring > p,
 main #Moons > p {
   width: 350%;
+}
+main #EyeOfTheStorm > .firstparagraph {
+  width: 80%;
 }
 
 /*Section Europa*/
