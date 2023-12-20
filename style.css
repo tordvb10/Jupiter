@@ -361,22 +361,22 @@ main h1 {
   -webkit-text-stroke-color: #442e19;
 }
 /*Section Introduksjon*/
-main #introduksjon > * > * {
-  max-width: 454px;
+main #ImgJupiterIntro {
+  width: 100%;
 }
-main #introduksjon {
-  color: #ffffff;
-  background-image: url("img/JupiterIntro.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 703px;
-  width: 1230px;
-  margin: 20px auto;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 2px;
+main .imgtekst {
+  position: absolute;
+  left: 75%;
+  top: 8px;
+  transform: translate(-50%);
+  color: #fff;
 }
-main #introduksjon h1 {
+main #introduksjon2 {
+  padding: 20px 7%;
+  background-color: #fff;
+}
+
+main #introduksjon2 h1 {
   border: none;
   color: #ffffff;
   font-size: 30px;
