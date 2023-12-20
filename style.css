@@ -231,11 +231,20 @@ main {
 /*Parallax design*/
 .pimg {
   position: relative;
-  opacity: 0.7;
+  opacity: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.pimg1 {
+  background-color: #fff;
+  min-height: 20px;
+}
+.pimg2 {
+  background-color: #000;
+  min-height: 200px;
+  opacity: 0;
 }
 .pimg3 {
   background-image: url("img/ParallaxEuropa2.webp");
@@ -340,7 +349,10 @@ header .norsk {
 }
 /*main*/
 main {
+  background-color: #fff;
   font-size: 14px;
+  position: relative;
+  z-index: 2;
 }
 main h1 {
   font-size: 20px;
@@ -448,6 +460,8 @@ main #Europa {
   padding-right: 60px;
 }
 
+/*section kilder*/
+
 /*img borderradius*/
 
 main #ImgGreatRedSpot,
@@ -458,4 +472,13 @@ main #ImgEuropa {
 }
 main #ImgEuropasIndre {
   border-radius: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  background-color: #000;
 }
