@@ -7,6 +7,7 @@ console.log(english);
 console.log(document.getElementsByClassName("english"));
 addEventListener("click", function () {
   console.log("knappen er trykket!");
+  byttspråk(language)
   if (language === "norsk") {
     console.log("Konverterer nettsiden til Engelsk.");
     //Converter nettside start
@@ -26,11 +27,27 @@ addEventListener("click", function () {
   }
 });
 
+function byttspråk(languagen){
+  Object.keys(array).forEach((key) => {
+    let språk = array[key]
+    console.log(språk[languagen])
+    console.log(key, array[key]);
+  });
+}
+
+const array = {
+  "main #introduksjon h1": {
+    'english': "Jupiter in English",
+    'norsk': "Jupiter på norsk",
+  },
+};
+
+
 //const arraysss  {
 //  {
 //    let queryselector: ""
 //  let norsken: ""
-//let enelsken: ""
+//let englsken: ""
 //},
 
 //{
