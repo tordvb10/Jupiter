@@ -31,16 +31,26 @@ function byttspråk(languagen){
   Object.keys(array).forEach((key) => {
     let språk = array[key]
     let settetekst = språk[languagen]
-    console.log(settetekst)
+    console.log(`settetekst = ${settetekst}`)
     console.log(key, array[key]);
-    document.querySelector(key).innerHTML = settetekst
+    let gammeltekst = document.querySelector(key)
+    console.log(`gammeltekst = ${gammeltekst}`)
+    gammeltekst.innerHTML = settetekst
   });
 }
 
 const array = {
   "main #introduksjon p": {
-    'norsk': "Jupiter er den største planeten i solsystemet, dobbel så stor som massen av alle de andre planetene sin masse til sammen.",
-    'english': "Jupiter is the largest planet i the solar system, twice as big as mass of all the other planets combined.",
+    "norsk": 'Jupiter er den største planeten i solsystemet, dobbel så stor som massen av alle de andre planetene sin masse til sammen. <br \><br \>',
+    "english": 'Jupiter is the largest planet i the solar system, twice as big as mass of all the other planets combined. <br \><br \>',
+  },
+  "main #introduksjon .imgtekst > div > div > div": {
+    "norsk": 'Nøkkel-stikkord',
+    "english": 'Key-notes',
+  },
+  "main #introduksjon .imgtekst ul": {
+    "norsk": '<li>95 måner</li><li>2 satellitter</li><li>Great Red Spot</li>',
+    "english": '<li>95 moons</li><li>2 satellites</li><li>Great Red Spot</li>',
   },
 };
 
