@@ -282,7 +282,6 @@ html {
 
 section {
   background-color: #cde6f5;
-  height: 100%;
   height: fit-content;
   gap: 20px;
   padding: 10px;
@@ -365,16 +364,15 @@ main h1 {
   -webkit-text-stroke-color: #442e19;
 }
 /*Section Introduksjon*/
-main #ImgJupiterIntro {
+main #introduksjon #ImgJupiterIntro {
   width: 100%;
   border-radius: 2px;
 }
-main .imgtekst {
-  position: absolute;
-  left: 75%;
-  top: 8px;
-  transform: translate(-50%);
+main #introduksjon .imgtekst {
   color: #fff;
+}
+main #introduksjon .imgtekst * {
+  row-gap: 0;
 }
 main #introduksjon {
   padding: 20px 7%;
@@ -388,6 +386,42 @@ main #introduksjon h1 {
   font-weight: bold;
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: none;
+}
+@media only screen and (min-width: 1050px) {
+  main #introduksjon .imgtekst {
+    position: absolute;
+    left: 75%;
+    top: 8px;
+    transform: translate(-50%);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  main #introduksjon .imgtekst > * {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main #introduksjon .imgtekst > * > * {
+    width: 30%;
+    align-self: center;
+  }
+  main #introduksjon .imgtekst {
+    display: flex;
+    justify-content: start;
+  }
+  main #introduksjon .imgcontainer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 790px) {
+  main #introduksjon .imgtekst > * {
+    flex-direction: column;
+  }
+  main #introduksjon .imgtekst > * > * {
+    width: 90%;
+  }
 }
 /*section myswiping*/
 
@@ -485,7 +519,7 @@ main #myswiping #ImgParallaxJupiter1Swipe {
 main #myswiping #ImgGreatRedSpotSwipe {
   object-position: right top;
 }
-main .tekstcontainterswipe > * {
+main #myswiping .tekstcontainterswipe > * {
   margin: 0;
   font-size: 20px;
   font-weight: bold;
@@ -526,12 +560,12 @@ main #Jupiter > * {
   margin-left: 10px;
   margin-right: 10px;
 }
-main #ImgJupitersIndre {
+/*Section Atmosfære*/
+main #Atmosfæren #ImgJupitersIndre {
   width: 80%;
   border-radius: 30px;
 }
 
-/*Section Atmosfære*/
 main #Atmosfæren p {
   font-size: 14px;
 }
@@ -548,9 +582,8 @@ main #Atmosfæren div {
 main #Atmosfæren {
   padding: 20px;
   height: fit-content;
-} /*
-main #Atmosfæren h1 {
-}/
+}
+
 /*section EyeOfTheStorm,Ring,Moons*/
 main #ImgGreatRedSpot,
 main #Imgjupiterrings,
@@ -571,8 +604,8 @@ main #EyeOfTheStorm > .firstparagraph {
 main #ImgEuropa {
   width: 80%;
 }
-main #ImgEuropaIndre {
-  width: 30%;
+main #ImgEuropasIndre {
+  width: 50%;
 }
 
 main #Europa {
@@ -580,8 +613,42 @@ main #Europa {
   padding-right: 60px;
 }
 
-/*section kilder*/
+@media only screen and (max-width: 850px) {
+  main #Jupiter,
+  main #Atmosfæren,
+  main #EyeOfTheStorm,
+  main #Ring,
+  main #Moons,
+  main #Europa > * {
+    flex-direction: column;
+  }
+  main #Atmosfæren > div {
+    width: 90%;
+  }
+  main #Jupiter {
+    height: fit-content;
+  }
+  main #ImgJupiterPresenter {
+    width: 70%;
+    height: auto;
+  }
+  main #Europa #ImgEuropasIndre {
+    border-radius: 20px;
+    width: 80%;
+  }
+}
 
+/*section kilder*/
+@media only screen and (max-width: 1000px) {
+  main #kilder {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+  }
+  main #kilder ul {
+    margin: 0;
+  }
+}
 /*img borderradius*/
 
 main #ImgGreatRedSpot,
