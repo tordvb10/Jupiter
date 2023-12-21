@@ -648,6 +648,9 @@ main #Europa {
   main #kilder ul {
     margin: 0;
   }
+  main #kilder li {
+    width: 100%;
+  }
 }
 /*img borderradius*/
 
