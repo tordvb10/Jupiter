@@ -648,9 +648,16 @@ main #Europa {
   main #kilder ul {
     margin: 0;
   }
-  main #kilder li {
-    width: 100%;
+}
+@media only screen and (max-width: 520px) {
+  main #kilder {
+    display: none;
   }
+}
+main #kilder ul,
+main #kilder li,
+main #kilder a {
+  width: 80%;
 }
 /*img borderradius*/
 
