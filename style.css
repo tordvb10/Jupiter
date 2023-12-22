@@ -551,8 +551,9 @@ main #Jupiter div {
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: #442e19;
 }
-main #Jupiter div p {
+main #Jupiter p {
   font-size: 17px;
+  text-align: center;
 }
 main #Jupiter > * {
   margin-left: 10px;
